@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import helloWorldTest.Person;
+import helloWorldTest.UnderAgeException;
+
 class PersonTest
 {
 
@@ -35,14 +38,11 @@ class PersonTest
 	{
 		assertThrows(UnderAgeException.class, () -> {
 			R.makePerson(J);
-			
 		});
 		
 		assertThrows(UnderAgeException.class, () -> {
 			M.makePerson(J);
-			
 		});
-		
 		
 		
 		Person child;
